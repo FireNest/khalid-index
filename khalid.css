@@ -1,0 +1,164 @@
+body
+{
+  background: url("../../images/dottedbackground3.jpeg") round fixed;
+}
+h1
+{
+  font-style: normal;
+}
+h2
+{
+  font-style: normal;
+}
+p
+{
+  font-size: 20px;
+}
+p:active
+{
+  background: #0f4c81;
+  color: #ffb677;
+}
+a
+{
+  text-decoration: none;
+  color: black;
+}
+a:hover
+{
+  color: yellow;
+  text-decoration: underline;
+}
+a:active
+{
+  color: #ffb677;
+}
+hr
+{
+  border-style: dotted none none;
+  color: black;
+  border-width: 10px;
+  width: 100px;
+  }
+.studying::after
+{
+  content: "👨‍🎓";
+}
+.studying1::after
+{
+  content: " 👦";
+}
+.studying2::after
+{
+  content: " 👨‍💻";   /*  for emojie display use \0 with numerical value*/
+}
+.studying3::after
+{
+  content: " 👨‍🏫";
+}
+.studying4::after
+{
+  content: "🤖";
+}
+.career::after
+{
+  content: "🧑";
+}
+.career1::after
+{
+  content: "❕👀";
+}
+.affiction::after
+{
+  content: "💏";
+}
+.participation::after
+{
+  content: " 🦸‍♂️";
+}
+.travelling::after
+{
+  content: "🏃‍♂️";
+}
+.betting::after
+{
+  content: " \01F485";
+}
+.karate::after
+{
+  content: "🤸‍♀️";
+}
+.throwing::after
+{
+  content: "\01F3AF";
+}
+label
+{
+  width: 200px;
+  display: inline-block;
+  text-align: right;
+}
+input[type="checkbox"], input[type="radio"]
+{
+  height: 16px;
+  width: 16px;
+}
+/*
+.dating
+{
+  position: absolute;
+  left: 65%;
+  bottom: 55%;
+}
+
+.party
+{
+  position:absolute;
+  left: 80%;
+  bottom: 55%;
+}
+.travelling1
+{
+  position: absolute;
+  left: 65%;
+  bottom: 28%;
+}
+.gambling
+{
+  position: absolute;
+  }
+.kickboxing
+{
+  position: absolute;
+  left: 65%;
+  bottom: 1%;
+}
+
+.dart_game
+{
+  position: absolute;
+  left: 80%;
+  bottom: 1%;
+}*/
+.main
+{
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 70%;
+  animation: moves 5s infinite;
+  animation-direction: alternate;
+}
+.main div
+{
+  flex: 1;
+}
+
+@keyframes moves
+{
+  from {left: 70%;}
+  to {left: 71%;}
+}
